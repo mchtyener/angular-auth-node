@@ -37,12 +37,13 @@ Bu proje, **Angular** frontend ve **Node.js** backend kullanarak, OTP (One-Time 
   
 ### Sayfalar
 
-- **Register Page**: Kullanıcı kayıt formu ve OTP doğrulama.
+- **Register Page**: Kullanıcı kayıt formu ve Email ile doğrulama.
 - **Login Page**: Kullanıcı giriş yaptıktan sonra OTP ile doğrulama.
-- **Home Page**: Kullanıcı giriş yaptıktan sonra erişebileceği ana sayfa.
-- **Profile Page**: Kullanıcı bilgilerini ve şifre değiştirme gibi işlemleri içeren profil sayfası.
+- **Home Page**: Kullacı giriş yaptıktan sonra kullanıcı bilgilerini gösteren sayfa. (guard kontrolü gerçekleşiyor)
+- **Verify Email**: Kullanıcı maile gönderilen doğrulama maili işin doğrulama sayfası.
 - **Forgot Password**: Şifre sıfırlama için e-posta ile OTP gönderimi.
 - **Reset Password**: Yeni şifre belirleme sayfası.
+- **Otp Modal**: Otp işlemleri için hazırlanan bir otp modal component.
 
 ## Kurulum
 
