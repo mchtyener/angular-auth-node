@@ -2,16 +2,16 @@
 
 ## Proje Açıklaması
 
-Bu proje, *Angular* frontend ve *Node.js* backend kullanarak, OTP (One-Time Password) tabanlı bir kullanıcı doğrulama sistemi içermektedir. Sistemde, kayıt olma, giriş yapma, e-posta doğrulama, şifre sıfırlama gibi güvenlik süreçleri gerçekleştirilmiştir. Backend tarafında *Express.js*, e-posta gönderimi için *Nodemailer* kullanılmıştır. Frontend'de ise *Lazy Loading*, *Interceptor* ve *Guards* gibi Angular özellikleriyle kullanıcı yönlendirmeleri yapılmıştır.
+Bu proje, **Angular** frontend ve **Node.js** backend kullanarak, OTP (One-Time Password) tabanlı bir kullanıcı doğrulama sistemi içermektedir. Sistemde, kayıt olma, giriş yapma, e-posta doğrulama, şifre sıfırlama gibi güvenlik süreçleri gerçekleştirilmiştir. Backend tarafında **Express.js**, e-posta gönderimi için **Nodemailer** kullanılmıştır. Frontend'de ise **Lazy Loading**, **Interceptor** ve **Guards** gibi Angular özellikleriyle kullanıcı yönlendirmeleri yapılmıştır.
 
 ### Kullanılan Teknolojiler
 
-- *Angular* (Frontend)
-- *Node.js* (Backend)
-- *Express.js* (API)
-- *Nodemailer* (E-posta gönderimi)
-- *JSON Web Tokens (JWT)* (Kimlik doğrulama)
-- *MongoDB* (Veritabanı)
+- **Angular** (Frontend)
+- **Node.js** (Backend)
+- **Express.js** (API)
+- **Nodemailer** (E-posta gönderimi)
+- **JSON Web Tokens (JWT)** (Kimlik doğrulama)
+- **MongoDB** (Veritabanı)
 
 ## Backend Özellikleri
 
@@ -49,34 +49,38 @@ Bu proje, *Angular* frontend ve *Node.js* backend kullanarak, OTP (One-Time Pass
 ### Backend
 
 1. Depoyu klonlayın:
-    bash
-    git clone https://github.com/mchtyener/angular-auth-node.git
-    
+    ```bash
+    git clone https://github.com/kullanici-adi/proje-adi.git
+    ```
 2. Backend klasörüne gidin:
-    bash
+    ```bash
     cd backend
-    
+    ```
 3. Gerekli bağımlılıkları yükleyin:
-    bash
+    ```bash
     npm install
-    
+    ```
 4. Ortam dosyasını (.env) ayarlayın ve gerekli veritabanı, SMTP bilgilerini girin.
 5. Sunucuyu başlatın:
-    bash
+    ```bash
     npm start
-    
+    ```
 
 ### Frontend
 
 1. Frontend klasörüne gidin:
-    bash
+    ```bash
     cd frontend
-    
+    ```
 2. Gerekli bağımlılıkları yükleyin:
-    bash
+    ```bash
     npm install
-    
+    ```
 3. Angular uygulamasını başlatın:
-    bash
+    ```bash
     ng serve
-    
+    ```
+
+## Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
