@@ -81,7 +81,3 @@ Bu proje, **Angular** frontend ve **Node.js** backend kullanarak, OTP (One-Time 
     ```bash
     ng serve
     ```
-
-## Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır.
