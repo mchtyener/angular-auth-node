@@ -1,0 +1,26 @@
+{
+  // Prettier uses single quotes.
+  "prettier.singleQuote": true,
+  // Prettify on save
+  "editor.formatOnSave": true,
+  // prettier uses 2 spaces instead of 4
+  "editor.tabSize": 2,
+  // organize imports on save
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  // Uses the project specific typescript version.
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

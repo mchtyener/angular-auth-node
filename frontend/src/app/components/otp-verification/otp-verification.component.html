@@ -1,0 +1,32 @@
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <div class="input-group">
+        <ng-container *ngFor="let item of [1, 1, 1, 1, 1, 1]; let i = index">
+          <input 
+            type="text"
+            mask="0"
+            class="form-control text-center" 
+            maxlength="1" 
+            (keyup)="onKeyUp($event, i)" 
+            (paste)="onPaste($event)" 
+            [attr.aria-label]="'OTP ' + (i + 1)" 
+            (input)="checkIfAllFilled()"
+            #otpInput>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center my-3">
+    <div class="col-auto">
+      <div *ngIf="loading()" class="loading-overlay">
+        <p class="loading-text">Yanıt Bekleniyor...</p>
+      </div>
+      <p class="text-danger" *ngIf="attempts < maxAttempts">
+        Toplam {{ maxAttempts }} deneme hakkınız var. Kalan hakkınız: {{ maxAttempts - attempts }}
+      </p>      
+      <p class="text-muted">Kalan süre: {{ countdown }} saniye</p>
+    </div>
+  </div>
+</div>

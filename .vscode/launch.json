@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ng serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}/js-storefront/speedybunny"
+    },
+    {
+      "name": "ng test",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:9876/debug.html",
+      "webRoot": "${workspaceFolder}/js-storefront/speedybunny",
+      "sourceMapPathOverrides": {
+        "./src/*": "${workspaceFolder}/js-storefront/speedybunny/src/*"
+      }
+    },
+    {
+      "name": "ng e2e",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/js-storefront/speedybunny/node_modules/protractor/bin/protractor",
+      "args": ["${workspaceFolder}/js-storefront/speedybunny/e2e/protractor.conf.js"]
+    }
+  ]
+}
